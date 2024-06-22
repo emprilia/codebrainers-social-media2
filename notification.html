@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Starter</title>
+  {{> head}}
+</head>
+
+<body class="app">
+  {{> navigation}}
+  {{> sidebar}}
+  <main class="mainContent">
+    <div class="container">
+      <secion class="notification">
+        <!-- background -->
+        <div class="notification__bg">
+          <!-- head -->
+          <div class="notification__head">
+            <div class="notification__headTitle">
+              <h2>Notification
+                <span>23</span>
+              </h2>
+            </div>
+            <div class="notification__headTools">
+              <ul>
+                <li>
+                  <a href="#">
+                    <div class="notification__headToolsItem">
+                      <i class="fa-solid fa-hard-drive"></i>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="notification__headToolsItem">
+                      <i class="fa-solid fa-circle-exclamation"></i>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="notification__headToolsItem">
+                      <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- body -->
+          <div class="notification__body">
+            <!-- today -->
+
+            <ul>
+              <li>
+                <a href="#">
+                  <div class="notification__bodyItem">
+                    <div class="notification__bodyItemBox">
+                      <!-- image -->
+                      <div class="notification__bodyItemImage">
+                        <img class="notification__bodyItemImg" src="https://picsum.photos/60" alt="image">
+                        {{> loveIcon}}
+                      </div>
+                      <!-- content -->
+                      <div class="notification__bodyItemContent">
+                        <h6 class="notification__bodyItemTitle">
+                          <strong>Victor Exrixon</strong>
+                          posted in
+                          <strong>UI/UX Community</strong>
+                          : “Mobile Apps UI Designer is required for Tech…”
+                        </h6>
+                        <!-- nie znam jescze JS, ale zakladam, że zmienie "12 minutes" na zmienną  -->
+                        <span class="notification__bodyItemWhen">12 minutes ago</span>
+                      </div>
+                    </div>
+                    <!-- options -->
+                    <div class="notification__bodyItemOption">
+                      <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <!--  -->
+              <li>
+                <a href="#">
+                  <div class="notification__bodyItem">
+                    <div class="notification__bodyItemBox">
+                      <!-- image -->
+                      <div class="notification__bodyItemImage">
+                        <img class="notification__bodyItemImg" src="https://picsum.photos/60" alt="image">
+                        {{> likeIcon}}
+                      </div>
+                      <!-- content -->
+                      <div class="notification__bodyItemContent">
+                        <h6 class="notification__bodyItemTitle">
+                          <strong>Victor Exrixon</strong>
+                          posted in
+                          <strong>UI/UX Community</strong>
+                          : “Mobile Apps UI Designer is required for Tech…”
+                        </h6>
+                        <span class="notification__bodyItemWhen">30 minutes ago</span>
+                      </div>
+                    </div>
+                    <!-- options -->
+                    <div class="notification__bodyItemOption">
+                      <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <!--  -->
+              <li>
+                <a href="#">
+                  <div class="notification__bodyItem">
+                    <div class="notification__bodyItemBox">
+                      <!-- image -->
+                      <div class="notification__bodyItemImage">
+                        <img class="notification__bodyItemImg" src="https://picsum.photos/60" alt="image">
+                        {{> likeIcon}}
+                      </div>
+                      <!-- content -->
+                      <div class="notification__bodyItemContent">
+                        <h6 class="notification__bodyItemTitle">
+                          <strong>Victor Exrixon</strong>
+                          posted in
+                          <strong>UI/UX Community</strong>
+                          : “Mobile Apps UI Designer is required for Tech…”
+                        </h6>
+                        <span class="notification__bodyItemWhen">1 hours ago</span>
+                      </div>
+                    </div>
+                    <!-- options -->
+                    <div class="notification__bodyItemOption">
+                      <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <!--  -->
+              <li>
+                <a href="#">
+                  <div class="notification__bodyItem">
+                    <div class="notification__bodyItemBox">
+                      <!-- image -->
+                      <div class="notification__bodyItemImage">
+                        <img class="notification__bodyItemImg" src="https://picsum.photos/60" alt="image">
+                        {{> massageIcon}}
+                      </div>
+                      <!-- content -->
+                      <div class="notification__bodyItemContent">
+                        <h6 class="notification__bodyItemTitle">
+                          <strong>Victor Exrixon</strong>
+                          posted in
+                          <strong>UI/UX Community</strong>
+                          : “Mobile Apps UI Designer is required for Tech…”
+                        </h6>
+                        <span class="notification__bodyItemWhen">2 hours ago</span>
+                      </div>
+                    </div>
+                    <!-- options -->
+                    <div class="notification__bodyItemOption">
+                      <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <!--  -->
+              <li>
+                <a href="#">
+                  <div class="notification__bodyItem">
+                    <div class="notification__bodyItemBox">
+                      <!-- image -->
+                      <div class="notification__bodyItemImage">
+                        <img class="notification__bodyItemImg" src="https://picsum.photos/60" alt="image">
+                        {{> massageIcon}}
+                      </div>
+                      <!-- content -->
+                      <div class="notification__bodyItemContent">
+                        <h6 class="notification__bodyItemTitle">
+                          <strong>Victor Exrixon</strong>
+                          posted in
+                          <strong>UI/UX Community</strong>
+                          : “Mobile Apps UI Designer is required for Tech…”
+                        </h6>
+                        <span class="notification__bodyItemWhen">6 hours ago</span>
+                      </div>
+                    </div>
+                    <!-- options -->
+                    <div class="notification__bodyItemOption">
+                      <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <!--  -->
+              <li>
+                <a href="#">
+                  <div class="notification__bodyItem">
+                    <div class="notification__bodyItemBox">
+                      <!-- image -->
+                      <div class="notification__bodyItemImage">
+                        <img class="notification__bodyItemImg" src="https://picsum.photos/60" alt="image">
+                        {{> likeIcon}}
+                      </div>
+                      <!-- content -->
+                      <div class="notification__bodyItemContent">
+                        <h6 class="notification__bodyItemTitle">
+                          <strong>Victor Exrixon</strong>
+                          posted in
+                          <strong>UI/UX Community</strong>
+                          : “Mobile Apps UI Designer is required for Tech…”
+                        </h6>
+                        <span class="notification__bodyItemWhen">11 hours ago</span>
+                      </div>
+                    </div>
+                    <!-- options -->
+                    <div class="notification__bodyItemOption">
+                      <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <!-- yesterday -->
+              <h4 class="notification__bodyDate">Yesterday</h4>
+              <li>
+                <a href="#">
+                  <div class="notification__bodyItem">
+                    <div class="notification__bodyItemBox">
+                      <!-- image -->
+                      <div class="notification__bodyItemImage">
+                        <img class="notification__bodyItemImg" src="https://picsum.photos/60" alt="image">
+                      </div>
+                      <!-- content -->
+                      <div class="notification__bodyItemContent">
+                        <h6 class="notification__bodyItemTitle">
+                          <strong>Victor Exrixon</strong>
+                          posted in
+                          <strong>UI/UX Community</strong>
+                          : “Mobile Apps UI Designer is required for Tech…”
+                        </h6>
+                        <span class="notification__bodyItemWhen">12:48PM</span>
+                      </div>
+                    </div>
+                    <!-- options -->
+                    <div class="notification__bodyItemOption">
+                      <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <!--  -->
+              <li>
+                <a href="#">
+                  <div class="notification__bodyItem">
+                    <div class="notification__bodyItemBox">
+                      <!-- image -->
+                      <div class="notification__bodyItemImage">
+                        <img class="notification__bodyItemImg" src="https://picsum.photos/60" alt="image">
+                      </div>
+                      <!-- content -->
+                      <div class="notification__bodyItemContent">
+                        <h6 class="notification__bodyItemTitle">
+                          <strong>Victor Exrixon</strong>
+                          posted in
+                          <strong>UI/UX Community</strong>
+                          : “Mobile Apps UI Designer is required for Tech…”
+                        </h6>
+                        <span class="notification__bodyItemWhen">12:48PM</span>
+                      </div>
+                    </div>
+                    <!-- options -->
+                    <div class="notification__bodyItemOption">
+                      <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <!--  -->
+              <li>
+                <a href="#">
+                  <div class="notification__bodyItem">
+                    <div class="notification__bodyItemBox">
+                      <!-- image -->
+                      <div class="notification__bodyItemImage">
+                        <img class="notification__bodyItemImg" src="https://picsum.photos/60" alt="image">
+                      </div>
+                      <!-- content -->
+                      <div class="notification__bodyItemContent">
+                        <h6 class="notification__bodyItemTitle">
+                          <strong>Victor Exrixon</strong>
+                          posted in
+                          <strong>UI/UX Community</strong>
+                          : “Mobile Apps UI Designer is required for Tech…”
+                        </h6>
+                        <span class="notification__bodyItemWhen">12:48PM</span>
+                      </div>
+                    </div>
+                    <!-- options -->
+                    <div class="notification__bodyItemOption">
+                      <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <!--  -->
+              <li>
+                <a href="#">
+                  <div class="notification__bodyItem">
+                    <div class="notification__bodyItemBox">
+                      <!-- image -->
+                      <div class="notification__bodyItemImage">
+                        <img class="notification__bodyItemImg" src="https://picsum.photos/60" alt="image">
+                      </div>
+                      <!-- content -->
+                      <div class="notification__bodyItemContent">
+                        <h6 class="notification__bodyItemTitle">
+                          <strong>Victor Exrixon</strong>
+                          posted in
+                          <strong>UI/UX Community</strong>
+                          : “Mobile Apps UI Designer is required for Tech…”
+                        </h6>
+                        <span class="notification__bodyItemWhen">12:48PM</span>
+                      </div>
+                    </div>
+                    <!-- options -->
+                    <div class="notification__bodyItemOption">
+                      <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <h4 class="notification__bodyDate">12 July 2021</h4>
+              <li>
+                <a href="#">
+                  <div class="notification__bodyItem">
+                    <div class="notification__bodyItemBox">
+                      <!-- image -->
+                      <div class="notification__bodyItemImage">
+                        <img class="notification__bodyItemImg" src="https://picsum.photos/60" alt="image">
+                      </div>
+                      <!-- content -->
+                      <div class="notification__bodyItemContent">
+                        <h6 class="notification__bodyItemTitle">
+                          <strong>Victor Exrixon</strong>
+                          posted in
+                          <strong>UI/UX Community</strong>
+                          : “Mobile Apps UI Designer is required for Tech…”
+                        </h6>
+                        <span class="notification__bodyItemWhen">12:48PM</span>
+                      </div>
+                    </div>
+                    <!-- options -->
+                    <div class="notification__bodyItemOption">
+                      <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <!--  -->
+              <li>
+                <a href="#">
+                  <div class="notification__bodyItem">
+                    <div class="notification__bodyItemBox">
+                      <!-- image -->
+                      <div class="notification__bodyItemImage">
+                        <img class="notification__bodyItemImg" src="https://picsum.photos/60" alt="image">
+                      </div>
+                      <!-- content -->
+                      <div class="notification__bodyItemContent">
+                        <h6 class="notification__bodyItemTitle">
+                          <strong>Victor Exrixon</strong>
+                          posted in
+                          <strong>UI/UX Community</strong>
+                          : “Mobile Apps UI Designer is required for Tech…”
+                        </h6>
+                        <span class="notification__bodyItemWhen">12:48PM</span>
+                      </div>
+                    </div>
+                    <!-- options -->
+                    <div class="notification__bodyItemOption">
+                      <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <!--  -->
+              <li>
+                <a href="#">
+                  <div class="notification__bodyItem">
+                    <div class="notification__bodyItemBox">
+                      <!-- image -->
+                      <div class="notification__bodyItemImage">
+                        <img class="notification__bodyItemImg" src="https://picsum.photos/60" alt="image">
+                      </div>
+                      <!-- content -->
+                      <div class="notification__bodyItemContent">
+                        <h6 class="notification__bodyItemTitle">
+                          <strong>Victor Exrixon</strong>
+                          posted in
+                          <strong>UI/UX Community</strong>
+                          : “Mobile Apps UI Designer is required for Tech…”
+                        </h6>
+                        <span class="notification__bodyItemWhen">12:48PM</span>
+                      </div>
+                    </div>
+                    <!-- options -->
+                    <div class="notification__bodyItemOption">
+                      <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <!--  -->
+              <li>
+                <a href="#">
+                  <div class="notification__bodyItem">
+                    <div class="notification__bodyItemBox">
+                      <!-- image -->
+                      <div class="notification__bodyItemImage">
+                        <img class="notification__bodyItemImg" src="https://picsum.photos/60" alt="image">
+                      </div>
+                      <!-- content -->
+                      <div class="notification__bodyItemContent">
+                        <h6 class="notification__bodyItemTitle">
+                          <strong>Victor Exrixon</strong>
+                          posted in
+                          <strong>UI/UX Community</strong>
+                          : “Mobile Apps UI Designer is required for Tech…”
+                        </h6>
+                        <span class="notification__bodyItemWhen">12:48PM</span>
+                      </div>
+                    </div>
+                    <!-- options -->
+                    <div class="notification__bodyItemOption">
+                      <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </secion>
+    </div>
+  </main>
+
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+
+</html>

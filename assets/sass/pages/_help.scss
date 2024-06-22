@@ -1,0 +1,111 @@
+@use '../abstaract/'as *;
+
+.help {
+
+    &__head {
+        background: url(/assets/img/login-bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0 0 50px 0;
+
+        &-bg {
+            width: 100%;
+            height: 100%;
+            background-color: #0055ff97;
+            border-radius: 10px;
+            padding: 50px 80px;
+            color: #fff;
+
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__title {
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+
+        h2 {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    &__scrap {
+        text-align: center;
+    }
+
+    &__search {
+        width: 80%;
+        border-radius: 8px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        position: relative;
+
+        &-input {
+            width: 100%;
+            padding: 0;
+            margin: - 5px 0 0 0;
+            padding: 0 0 0 50px;
+
+            // inaczej nie działa :(
+            input {
+                border: none;
+
+                &:focus {
+                    border: none;
+                }
+            }
+        }
+
+        &-btnn {
+            background-color: $theme-color;
+            color: #fff;
+            padding: 14px 30px;
+            margin: 2px;
+            border-radius: 7px;
+        }
+
+        i {
+            position: absolute;
+            color: #adb5bd;
+            inset: 17px auto auto 18px;
+        }
+    }
+
+    &__label {
+        height: 0;
+        width: 0;
+        display: none;
+        visibility: hidden;
+        position: absolute;
+        outline: none;
+    }
+
+    &__item {
+        width: 100%;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, .05);
+        border-radius: 8px;
+        background-color: $help-item-bg-color;
+        color: $help-item-writte-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        margin: 0 0 50px 0;
+    }
+
+    &__itemTitle {
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

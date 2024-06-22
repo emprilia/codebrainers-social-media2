@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+
+  {{> head}}
+</head>
+
+<body>
+  <section class="auth">
+    <div class="auth__img auth__img--register">
+      {{> logo}}
+    </div>
+    <div class="auth__content">
+      <div class="auth__logo">{{> logo}}</div>
+      <div class="auth__wraper">
+        <h1 class="auth__title">
+          Utwórz swoje konto
+        </h1>
+        <form class="auth__form" action="">
+          <!--  -->
+          <div class="auth__row">
+            <i class="fa-regular fa-user auth__iconInput"></i>
+            <input class="auth__input" placeholder="Nazwa użytkownika" type="text" name="login">
+          </div>
+          <!--  -->
+          <div class="auth__row">
+            <i class="fa-regular fa-envelope auth__iconInput"></i>
+            <input class="auth__input" placeholder="E-mail" type="email" name="email">
+          </div>
+          <!--  -->
+          <div class="auth__row">
+            <i class="fa-solid fa-key auth__iconInput"></i>
+            <input class="auth__input" placeholder="Wpisz hasło" type="password" name="passwod">
+          </div>
+          <!--  -->
+          <div class="auth__row">
+            <i class="fa-solid fa-key auth__iconInput"></i>
+            <input class="auth__input" placeholder="Powtórz hasło" type="password" name="passwod-repeat">
+          </div>
+          <!--  -->
+          <div class="auth__row">
+            <button class="auth__button">Zarejestruj się</button>
+          </div>
+        </form>
+        <p class="auth__info">
+          Masz już konto?
+          <a href="login.html"> Zaloguj się</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+
+</html>

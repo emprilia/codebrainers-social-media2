@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Starter</title>
+  {{> head}}
+</head>
+
+<body class="app">
+  {{> navigation}}
+  {{> sidebar}}
+  <main class="mainContent">
+    <div class="container">
+      <section class="socialNetwork">
+        <!-- Blue Header -->
+        <div class="header">
+          <div class="header__box">
+            <a href="settings.html">
+              <div class="header__box-arrow">
+                <i class="fa-solid fa-arrow-left"></i>
+              </div>
+            </a>
+            <h4 class="header__box-title">Contact Information</h4>
+          </div>
+        </div>
+        <!-- end Blue Header -->
+        <div class="socialNetwork__body">
+          <form class="form" action="" method="get" enctype="multipart/form-data">
+            <div class="form__box">
+              <!-- short -->
+              <div class="form__row form__row--half">
+                <label class="form__label" for="i-facebook">Facebook</label>
+                <input class="form__input" type="text" name="facebook" id="i-facebook">
+              </div>
+              <!-- short -->
+              <div class="form__row form__row--half">
+                <label class="form__label" for="i-twitter">Twitter</label>
+                <input class="form__input" type="text" name="twitter" id="i-twitter">
+              </div>
+              <!-- short -->
+              <div class="form__row form__row--half">
+                <label class="form__label" for="i-linkedin">Linkedin</label>
+                <input class="form__input" type="text" name="linkedin" id="i-linkedin">
+              </div>
+              <!-- short -->
+              <div class="form__row form__row--half">
+                <label class="form__label" for="i-instagram">Instagram</label>
+                <input class="form__input" type="text" name="instagram" id="i-instagram">
+              </div>
+              <!-- short -->
+              <div class="form__row form__row--half">
+                <label class="form__label" for="i-flickr">Flickr</label>
+                <input class="form__input" type="text" name="flickr" id="i-flickr">
+              </div>
+              <!-- short -->
+              <div class="form__row form__row--half">
+                <label class="form__label" for="i-github">Github</label>
+                <input class="form__input" type="text" name="github" id="i-github">
+              </div>
+              <!-- short -->
+              <div class="form__row form__row--half">
+                <label class="form__label" for="i-skype">Skype</label>
+                <input class="form__input" type="text" name="skype" id="i-skype">
+              </div>
+              <!-- short -->
+              <div class="form__row form__row--half">
+                <label class="form__label" for="i-google">Google</label>
+                <input class="form__input" type="text" name="google" id="i-google">
+              </div>
+              {{> blueBtn}}
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+
+</html>

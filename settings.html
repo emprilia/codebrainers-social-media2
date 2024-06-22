@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Starter</title>
+  {{> head}}
+</head>
+
+<body class="app">
+  {{> navigation}}
+  {{> sidebar}}
+  <main class="mainContent">
+    <div class="container">
+      <section class="settings">
+        <!--  -->
+        <h1 class="settings__title">Ustawienia</h1>
+        <div class="settings__options">
+          <!-------------------------- General -------------------------->
+          <h4 class="settings__miniTitle">General</h4>
+          <ul class="settings__menu">
+            <!--  -->
+            <li>
+              <a href="accountInformation.html">
+                <div class="settings__menuItem">
+                  <div class="settings__menuBox">
+                    <div class="settings__menuIcon icon icon-blueGradient">
+                      <i class="fa-solid fa-house"></i>
+                    </div>
+                    <div class="settings__menuTitle">Account Information</div>
+                  </div>
+                  <div class="settings__menuEnd">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <!--  -->
+            <li>
+              <a href="savedAdress.html">
+                <div class="settings__menuItem">
+                  <div class="settings__menuBox">
+                    <div class="settings__menuIcon icon icon-orangeGradient">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="settings__menuTitle">Saved Address</div>
+                  </div>
+                  <div class="settings__menuEnd">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <!--  -->
+            <li>
+              <a href="socialNetwork.html">
+                <div class="settings__menuItem">
+                  <div class="settings__menuBox">
+                    <div class="settings__menuIcon icon icon-redGradient">
+                      <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="settings__menuTitle">Social Accound</div>
+                  </div>
+                  <div class="settings__menuEnd">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <!-------------------------- Account -------------------------->
+          <h4 class="settings__miniTitle">Account</h4>
+          <!--  -->
+          <ul class="settings__menu">
+            <!--  -->
+            <li>
+              <a href="myCards.html">
+                <div class="settings__menuItem">
+                  <div class="settings__menuBox">
+                    <div class="settings__menuIcon icon icon-redGradient">
+                      <i class="fa-solid fa-credit-card"></i>
+                    </div>
+                    <div class="settings__menuTitle">My cards</div>
+                  </div>
+                  <div class="settings__menuEnd">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <!--  -->
+            <li>
+              <a href="password.html">
+                <div class="settings__menuItem">
+                  <div class="settings__menuBox">
+                    <div class="settings__menuIcon icon icon-darkGradient">
+                      <i class="fa-solid fa-key"></i>
+                    </div>
+                    <div class="settings__menuTitle">Password</div>
+                  </div>
+                  <div class="settings__menuEnd">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <!-------------------------- Other -------------------------->
+          <h4 class="settings__miniTitle">Other</h4>
+          <!--  -->
+          <ul class="settings__menu">
+            <!--  -->
+            <li>
+              <a href="notification.html">
+                <div class="settings__menuItem">
+                  <div class="settings__menuBox">
+                    <div class="settings__menuIcon icon icon-orangeGradient">
+                      <i class="fa-regular fa-bell"></i>
+                    </div>
+                    <div class="settings__menuTitle">Notification</div>
+                  </div>
+                  <div class="settings__menuEnd">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <!--  -->
+            <li>
+              <a href="help.html">
+                <div class="settings__menuItem">
+                  <div class="settings__menuBox">
+                    <div class="settings__menuIcon icon icon-blueGradient">
+                      <i class="fa-regular fa-circle-question"></i>
+                    </div>
+                    <div class="settings__menuTitle">Help</div>
+                  </div>
+                  <div class="settings__menuEnd">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <!--  -->
+            <li>
+              <a href="#">
+                <div class="settings__menuItem">
+                  <div class="settings__menuBox">
+                    <div class="settings__menuIcon icon icon-redGradient">
+                      <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div class="settings__menuTitle">Logout</div>
+                  </div>
+                  <div class="settings__menuEnd">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+
+</html>

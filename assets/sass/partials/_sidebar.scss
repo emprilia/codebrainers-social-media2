@@ -1,0 +1,79 @@
+@use '../abstaract/'as *;
+
+.sidebar {
+    position: fixed;
+    width: $sidebar-witdh;
+    padding: 105px 15px 15px 15px;
+    inset: 0 auto auto 0;
+    height: 100vh;
+    overflow-y: scroll;
+
+    @include scrollbars (5px, $theme-color, transparent);
+
+    &__box {
+        background-color: $sidebar-bg;
+        padding: 10px 15px;
+        border-radius: 10px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, .05);
+        margin: 0 0 10px 0;
+    }
+
+    &__boxTitle {
+        font-size: 12px;
+        color: $sidebar-title-color;
+        font-weight: 600;
+        margin: 0 0 10px 0;
+    }
+
+    &__icon {
+        margin: 10px 0;
+
+        &-morePages {
+            color: $theme-color;
+            padding: 12px 15px 12px 0;
+            font-size: 15px;
+            width: 40px;
+
+            i {
+                font-size: 28px;
+            }
+        }
+
+        &-account {
+            color: $sidebar-desc-color;
+            padding: 10px 15px 10px 0;
+            font-size: 15px;
+            width: 30px;
+
+            i {
+                font-size: 20px;
+            }
+        }
+    }
+
+    &__item {
+        margin: 10px 0;
+
+        a {
+            display: flex;
+            align-items: center;
+        }
+
+        &-desc {
+            font-size: 15px;
+            color: $sidebar-desc-color;
+
+            &:hover {
+                color: $theme-color;
+            }
+        }
+
+        &-numbers {
+            background-color: #fe9431;
+            color: #fff;
+            margin: 0 0 0 30px;
+            padding: 5px;
+            border-radius: 7px;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+<form class="form" action="" method="get" enctype="multipart/form-data">
+    <div class="form__box">
+        <!-- short -->
+        <div class="form__row form__row--half">
+            <label class="form__label" for="i-fName">First Name</label>
+            <input class="form__input" type="text" name="fName" id="i-fName">
+        </div>
+        <!-- short -->
+        <div class="form__row form__row--half">
+            <label class="form__label" for="i-lName">Last Name</label>
+            <input class="form__input" type="text" name="lName" id="i-lName">
+        </div>
+        <!-- short -->
+        <div class="form__row form__row--half">
+            <label class="form__label" for="i-fName">E-mail</label>
+            <input class="form__input" type="email" name="email" id="i-email">
+        </div>
+        <!-- short -->
+        <div class="form__row form__row--half">
+            <label class="form__label" for="i-lName">Phone</label>
+            <input class="form__input" type="text" name="phone" id="i-phone">
+        </div>
+        <!-- long -->
+        <div class="form__row">
+            <label class="form__label" for="i-fName">Country</label>
+            <input class="form__input" type="text" name="country" id="i-country">
+        </div>
+        <!-- long -->
+        <div class="form__row">
+            <label class="form__label" for="i-lName">Adress</label>
+            <input class="form__input" type="text" name="adress" id="i-adress">
+        </div>
+        <!-- short -->
+        <div class="form__row form__row--half">
+            <label class="form__label" for="i-fName">Town/City</label>
+            <input class="form__input" type="email" name="email" id="i-town">
+        </div>
+        <!-- short -->
+        <div class="form__row form__row--half">
+            <label class="form__label" for="i-lName">Postcode</label>
+            <input class="form__input" type="text" name="phone" id="i-postcde">
+        </div>
+        <!-- ??? -->
+        <div class="form__row form__row--dragAndDrop">
+            <input type="file" class="form__file" id="i-file">
+            <label for="i-file" class="form__fileLabel">
+                <p>Kliknij aby dodać plik</p>
+                <i class="fa-solid fa-download form__fileLabel-icon"></i>
+            </label>
+        </div>
+        <div class="form__row form__row--desc">
+            <label class="form__label" for="text-description">Description</label>
+            <textarea class="form__textarea" placeholder="Writte your massage..." name="description"
+                id="text-description" cols="30" rows="10"></textarea>
+        </div>
+        {{> blueBtn}}
+    </div>
+</form>

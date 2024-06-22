@@ -1,0 +1,36 @@
+@use 'modern-normalize/modern-normalize.css';
+@use '@fortawesome/fontawesome-free/css/all.css';
+@use 'base';
+// ---------------------------------------------------------------->
+
+// ***************************
+// PAGES
+// ***************************
+@use 'pages/auth';
+@use 'pages/settings';
+@use 'pages/savedAdress';
+@use 'pages/accountInformation';
+@use 'pages/socialNetwork';
+@use 'pages/myCards';
+@use 'pages/password';
+@use 'pages/help';
+@use 'pages/notification';
+// ---------------------------------------------------------------->
+
+// ***************************
+// PARTIALS
+// ***************************
+@use 'partials/logo';
+@use 'partials/navigation';
+@use 'partials/sidebar';
+// ---------------------------------------------------------------->
+
+// ***************************
+// ELEMENTS
+// ***************************
+@use 'elements/icons';
+@use 'elements/button';
+@use 'elements/form';
+@use 'elements/blueHeader';
+@use 'elements/miniIcons';
+// ---------------------------------------------------------------->

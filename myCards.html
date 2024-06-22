@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Starter</title>
+  {{> head}}
+</head>
+
+<body class="app">
+  {{> navigation}}
+  {{> sidebar}}
+  <main class="mainContent">
+    <div class="container">
+      <section class="myCards">
+        <!-- Blue Header -->
+        <div class="header">
+          <div class="header__box">
+            <a href="settings.html">
+              <div class="header__box-arrow">
+                <i class="fa-solid fa-arrow-left"></i>
+              </div>
+            </a>
+            <h4 class="header__box-title">Payment Method</h4>
+          </div>
+        </div>
+        <!-- end Blue Header -->
+        <div class="myCards__body">
+          <!-- LEFT -->
+          <div class="myCards__left">
+            <div class="myCards__left-title">
+              <h4 class="myCards__left-sc">Saved Card</h4>
+            </div>
+            <div class="myCards__left-cards">
+              <!--  -->
+              <div class="myCards__left-item item1">
+                <div class="myCards__left-itemUper">
+                  <div class="image">
+                    <img class="image__logo" src="/assets/img/b-9.png" alt="P">
+                  </div>
+                  <div class="image">
+                    <img class="image__chip" src="/assets/img/chip.png" alt="chip">
+                  </div>
+                </div>
+                <div class="myCards__left-itemDown">
+                  <h4 class="myCards__left-itemDown-title">$ 5960.00</h4>
+                  <span class="myCards__left-itemDown-span">Debit Card</span>
+                </div>
+                <!--  -->
+              </div>
+              <div class="myCards__left-item item2">
+                <div class="myCards__left-itemUper">
+                  <div class="image">
+                    <img class="image__logo" src="/assets/img/b-14.png" alt="P">
+                  </div>
+                  <div class="image">
+                    <img class="image__chip" src="/assets/img/chip.png" alt="chip">
+                  </div>
+                </div>
+                <div class="myCards__left-itemDown">
+                  <h4 class="myCards__left-itemDown-title">$ 5960.00</h4>
+                  <span class="myCards__left-itemDown-span">Debit Card</span>
+                </div>
+                <!--  -->
+              </div>
+              <div class="myCards__left-item item3">
+                <div class="myCards__left-itemUper">
+                  <div class="image">
+                    <img class="image__logo" src="/assets/img/b-10.png" alt="P">
+                  </div>
+                  <div class="image">
+                    <img class="image__chip" src="/assets/img/chip.png" alt="chip">
+                  </div>
+                </div>
+                <div class="myCards__left-itemDown">
+                  <h4 class="myCards__left-itemDown-title">$ 2260.00</h4>
+                  <span class="myCards__left-itemDown-span">Debit Card</span>
+                </div>
+                <!--  -->
+              </div>
+              <a href="#" class="myCards__btn">Add Card</a>
+            </div>
+          </div>
+          <!-- end LEFT -->
+          <!-- RIGHT -->
+          <div class="myCards__right">
+            <div class="myCards__right-item item4">
+              <div class="myCards__right-itemUper">
+                <div class="image">
+                  <img class="image__logo" src="/assets/img/b-9.png" alt="P">
+                </div>
+                <div class="image">
+                  <img class="image__chip" src="/assets/img/chip.png" alt="chip">
+                </div>
+              </div>
+              <div class="myCards__right-itemDown">
+                <h4 class="myCards__right-itemDown-title">**** **** **** 2234</h4>
+                <span class="myCards__right-itemDown-span">Debit Card</span>
+              </div>
+            </div>
+            <form class="form" action="" method="get" enctype="multipart/form-data">
+              <div class="form__box">
+                <!-- long -->
+                <div class="form__row">
+                  <label class="form__label" for="i-cardNumber" placeholder="1234 1234 1234 1234">Card Number</label>
+                  <input class="form__input" type="text" name="cardNumber" id="i-cardNumber">
+                </div>
+                <!-- long -->
+                <div class="form__row">
+                  <label class="form__label" for="i-cardHolderName">Card Holder Name</label>
+                  <input class="form__input" type="text" name="cardHolderName" id="i-cardHolderName">
+                </div>
+                <!-- short -->
+                <div class="form__row form__row--half">
+                  <label class="form__label" for="i-month">Month</label>
+                  <input class="form__input" type="text" name="month" id="i-month">
+                </div>
+                <!-- short -->
+                <div class="form__row form__row--half">
+                  <label class="form__label" for="i-year">Year</label>
+                  <input class="form__input" type="text" name="year" id="i-year">
+                </div>
+                <a class="myCards__right-btn" href="#">Add Card</a>
+              </div>
+            </form>
+          </div>
+          <!-- end RIGHT -->
+      </section>
+    </div>
+  </main>
+
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+
+</html>

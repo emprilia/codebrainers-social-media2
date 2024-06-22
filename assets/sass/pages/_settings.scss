@@ -1,0 +1,56 @@
+@use '../abstaract/'as *;
+
+.settings {
+    background-color: #fff;
+    padding: 20px 50px 50px 50px;
+    border-radius: 9px;
+
+    &__title {
+        font-weight: 700;
+        padding: 0 0 40px 0;
+        font-size: 32px;
+        color: $settings-menu-item-color;
+    }
+
+    &__miniTitle {
+        font-size: 12px;
+        font-weight: 600;
+        color: $settings-title-color;
+    }
+
+    &__menu {
+        @include resetList;
+
+        li {
+            border-bottom: 1px solid $settings-accessories-color;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+
+    &__menuItem {
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    &__menuBox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__menuTitle {
+        font-weight: 600;
+        font-size: 14px;
+        color: $settings-menu-item-color;
+    }
+
+    &__menuEnd {
+        color: $settings-accessories-color;
+    }
+}

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Starter</title>
+  {{> head}}
+</head>
+
+<body class="app">
+  {{> navigation}}
+  {{> sidebar}}
+  <main class="mainContent">
+    <div class="container">
+      <section class="accountInformation">
+        <!-- Blue Header -->
+        <div class="header">
+          <div class="header__box">
+            <a href="settings.html">
+              <div class="header__box-arrow">
+                <i class="fa-solid fa-arrow-left"></i>
+              </div>
+            </a>
+            <h4 class="header__box-title">Account Details</h4>
+          </div>
+        </div>
+        <!-- end Blue Header -->
+        <div class="accountInformation__body">
+          <div class="accountInformation__bodyHero">
+            <div class="accountInformation__bodyHero-box">
+              <div class="accountInformation__bodyHero-img">
+                <img class="accountInformation__bodyHero-image" src="assets/img/pt-1.jpg" alt="photo">
+              </div>
+              <h2 class="accountInformation__bodyHero-name">Surfiya Zakir</h2>
+              <h4 class="accountInformation__bodyHero-city">Brooklyn</h4>
+            </div>
+          </div>
+          {{> form}}
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+
+</html>

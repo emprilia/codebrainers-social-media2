@@ -1,0 +1,10 @@
+@use '../abstaract/'as *;
+
+.socialNetwork {
+    border-radius: 10px;
+    background-color: #fff;
+
+    &__body {
+        padding: 10px 20px;
+    }
+}

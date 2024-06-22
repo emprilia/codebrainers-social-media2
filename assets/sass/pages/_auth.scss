@@ -1,0 +1,115 @@
+@use '../abstaract/'as *;
+
+.auth {
+    display: flex;
+    min-height: 100vh;
+
+    &__img {
+        width: 40%;
+        padding: 30px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+
+        &--login {
+            background-image: url(/assets/img/login-bg.jpg);
+        }
+
+        &--register {
+            background-image: url(/assets/img/login-bg-2.jpg);
+        }
+
+        @include big-tablet {
+            display: none;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        padding: 30px;
+        justify-content: center;
+        align-items: center;
+
+        @include big-tablet {
+            width: 100%;
+            padding: 15px;
+        }
+    }
+
+    &__logo {
+        display: none;
+
+        @include big-tablet {
+            display: block;
+            margin: 0 0 20px 0;
+        }
+    }
+
+    &__wraper {
+        max-width: 400px;
+    }
+
+    &__title {
+        text-align: center;
+        margin: 0 0 30px 0;
+
+        @include fluid-type (26px, 36px)
+    }
+
+    &__row {
+        position: relative;
+        margin: 0 0 10px 0;
+    }
+
+    &__input {
+        padding: 0 0 0 40px;
+        width: 100%;
+        height: 60px;
+        border-radius: 7px;
+        line-height: 60px;
+        outline: none;
+        border: 2px solid $auth-input-color;
+
+        &:focus {
+            border-color: $theme-color;
+        }
+
+        &--error {
+            border-color: $error-color;
+        }
+    }
+
+    &__iconInput {
+        position: absolute;
+        color: $auth-input-color;
+        font-size: 26px;
+        inset: 17px auto auto 6px;
+    }
+
+    &__error {
+        font-size: 12px;
+        margin: 6px 0 0 0;
+        color: $error-color;
+    }
+
+    &__button {
+        display: block;
+        height: 60px;
+        line-height: 60px;
+        border-radius: 7px;
+        text-align: center;
+        font-weight: 600;
+        width: 100%;
+        font-size: 14px;
+        border: none;
+        color: $auth-button-text;
+        background-color: $auth-button-bg;
+    }
+
+    &__info {
+        margin: 10px 0 0 0;
+        color: $auth-info-color;
+    }
+}

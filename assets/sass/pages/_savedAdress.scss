@@ -1,0 +1,15 @@
+@use '../abstaract/'as *;
+
+.savedAdress {
+    border-radius: 10px;
+    background-color: #fff;
+
+    &__body {
+        padding: 10px 20px;
+    }
+
+    &__map {
+        width: 100%;
+        padding: 10px 20px;
+    }
+}

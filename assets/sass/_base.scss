@@ -1,0 +1,59 @@
+@use 'abstaract'as *;
+
+a {
+    text-decoration: none;
+    color: $theme-color;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: $mai-font-family;
+
+    &.app {
+        background-color: $app-bg-color;
+        padding: 90px 0 0 0;
+
+        @include big-tablet {
+            padding: 74px 0 56px 0;
+        }
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $header-font-family;
+}
+
+.avatar {
+    display: inline-block;
+    aspect-ratio: 1;
+    height: 100px;
+    border-radius: 50%;
+
+    &--small {
+        height: 40px;
+    }
+
+    &--medium {
+        height: 60px;
+    }
+}
+
+.mainContent {
+    padding: 15px 0 15px $sidebar-witdh;
+}
+
+.container {
+    max-width: $max-container-size;
+    padding: 0 $gutter-gap;
+    margin: 0 auto;
+    width: 100%;
+}

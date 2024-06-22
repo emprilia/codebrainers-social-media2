@@ -1,0 +1,20 @@
+@use '../abstaract/'as *;
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 60px;
+    background-color: $theme-color;
+    color: $button-text;
+    font-weight: 600px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 8px;
+    margin: 10px $gutter-gap;
+
+    a {
+        color: $button-text;
+    }
+}

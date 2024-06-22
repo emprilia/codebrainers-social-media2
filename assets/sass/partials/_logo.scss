@@ -1,0 +1,19 @@
+@use '../abstaract/'as *;
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &__icon {
+        color: $logo-icon-color;
+        font-size: 36px;
+    }
+
+    &__name {
+        font-size: 32px;
+        font-weight: 600;
+        font-family: $logo-font-family;
+        color: $theme-color;
+    }
+}

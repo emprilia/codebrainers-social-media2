@@ -1,0 +1,125 @@
+@use '../abstaract/'as *;
+
+.container {
+    max-width: 1200px;
+}
+
+.notification {
+
+    &__bg {
+        background-color: $notification-bg-color;
+        border-radius: 8px;
+        padding: 0 20px 20px 20px;
+    }
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &Title {
+            font-weight: 700;
+            font-size: 22px;
+            position: relative;
+
+            span {
+                font-weight: 600;
+                background-color: #fe9431;
+                color: #fff;
+                font-size: 10px;
+                letter-spacing: 1px;
+                padding: 10px;
+                border-radius: 6px;
+                position: absolute;
+                inset: auto -35px 30px auto;
+            }
+        }
+
+        &Tools {
+            ul {
+                @include resetList;
+                display: flex;
+                gap: 15px;
+            }
+
+            &Item {
+                font-size: 16px;
+                background-color: $notification-tools-bg-color;
+                color: $notification-tools-color;
+                padding: 10px;
+                border-radius: 6px;
+            }
+        }
+    }
+
+    &__body {
+
+        ul {
+            @include resetList;
+
+            li {
+                padding: 20px 10px;
+                border-radius: 8px;
+
+                &:nth-child(5) {
+                    background-color: #f2faf6;
+                }
+
+                &:hover {
+                    background-color: #1e74fd3c;
+                }
+            }
+        }
+
+
+
+        &Item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+            &Box {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            // image 
+            &Image {
+                width: 45px;
+                height: 45px;
+                position: relative;
+            }
+
+            &Img {
+                border-radius: 50%;
+            }
+
+            // content
+            &Title {
+                font-weight: 500;
+                color: $notification-title-color;
+                margin: 0;
+                padding: 0;
+            }
+
+            &When {
+                font-weight: 600;
+                color: $notification-when-color;
+                font-size: 12px;
+                padding: 10px 0 0 0;
+            }
+
+            // option
+            &Option {
+                color: $notification-when-color;
+            }
+        }
+
+        &Date {
+            font-size: 12px;
+            color: $notification-date-color;
+        }
+    }
+}

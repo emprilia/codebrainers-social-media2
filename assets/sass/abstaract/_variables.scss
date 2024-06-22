@@ -1,0 +1,67 @@
+// ***************************
+// FONTS
+// ***************************
+$mai-font-family: "Roboto",
+sans-serif;
+$header-font-family: "Montserrat",
+sans-serif;
+$logo-font-family: "Fredoka",
+sans-serif;
+
+// ***************************
+// COLORS
+// ***************************
+$logo-icon-color: #10d876;
+$theme-color: #0055ff;
+$button-text: #fff;
+
+$auth-input-color: #eee;
+$error-color:#f32323;
+$auth-button-text: #fff;
+$auth-button-bg: #343a40;
+$auth-info-color: #adb5bd;
+
+$app-bg-color: #E8F1FA;
+
+$navigation-bg-color: #fff;
+$navigation-menu-item-bg-color: #f5f5f5;
+$navigation-menu-item-color: #adb5bd;
+
+$sidebar-witdh: 280px;
+$sidebar-bg: #fff;
+$sidebar-title-color: #adb5bd;
+$sidebar-desc-color: #888;
+
+$gutter-gap: 15px;
+$max-container-size: 800px;
+
+$settings-title-color: #adb5bd;
+$settings-accessories-color: #e1e1f0;
+$settings-menu-item-color: #111;
+
+$account-info-border-color: #eee;
+$account-inside-label-color: #888;
+
+$help-item-bg-color: #fff;
+$help-item-writte-color: #888;
+
+$notification-bg-color: #ffffff;
+$notification-tools-bg-color: #f5f5f5;
+$notification-tools-color: #adb5bd;
+$notification-title-color: #212529;
+$notification-when-color: #adb5bd;
+$notification-date-color: #adb5bd;
+
+// ***************************
+// GRADIENDS
+// ***************************
+$blue-gradient: linear-gradient(90deg, #0055ff 0%, #0095ff 100%);
+$orange-gradient: linear-gradient(90deg, #f2994a 0%, #f2c94c 100%);
+$red-gradient: linear-gradient(90deg, #e44d26 0%, #f16529 100%);
+$dark-gradient: linear-gradient(90deg, #0575e6 0%, #021b79 100%);
+
+$gradiends : ('blueGradient' : $blue-gradient,
+    'orangeGradient' : $orange-gradient,
+    'redGradient' : $red-gradient,
+    'darkGradient' : $dark-gradient,
+)

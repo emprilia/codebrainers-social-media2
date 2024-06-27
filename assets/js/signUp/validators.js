@@ -8,3 +8,13 @@ export const validateUsername = (input, field) => {
         field.isValid = true;
     }
 };
+
+export const validateEmail = (input, field) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(input.value)) {
+        displayError(input, "Email is not valid.");
+        field.isValid = false;
+    } else {
+        field.isValid = true;
+    }
+}

@@ -1,5 +1,5 @@
 //export do ?! EXPORTOWANIA 
-import { validateUsername } from "./validators.js";
+import { validateEmail, validateUsername } from "./validators.js";
 
 export const fields = [
     {
@@ -10,7 +10,7 @@ export const fields = [
     {
         id: "email",
         isValid: false,
-        validate: validateUsername,
+        validate: validateEmail,
     },
     {
         id: "password",

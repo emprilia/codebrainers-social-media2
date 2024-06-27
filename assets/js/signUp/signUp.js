@@ -30,3 +30,12 @@ inputs.forEach((input) => {
 });
 
 // ***********************************************************************
+
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  //objekt ktory przedstawia klucze wartosci zdanego form'a
+  const formData = new FormData(form);
+
+  window.location.href = "index.html";
+});

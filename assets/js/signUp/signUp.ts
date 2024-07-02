@@ -1,13 +1,15 @@
 // import !
-import { fields } from "./fields.js";
+import { fields } from "./fields.ts";
 import { displayError } from "./errors.js";
 import { checkFormIsValid } from "../helpers/form.js";
 
 // ***********************************************************************
 
-const form = document.getElementById("signUpForm");
-const inputs = document.querySelectorAll(".auth__input");
-const submitButton = document.querySelector(".auth__button");
+const form = <HTMLFormElement>document.getElementById("signUpForm");
+const inputs = <NodeListOf<HTMLInputElement>>(
+  document.querySelectorAll(".auth__input")
+);
+const submitButton = <HTMLButtonElement>document.querySelector(".auth__button");
 // ***********************************************************************
 
 // sprawdzam czy wszystkie pola sa poprawne zeby przycisk był wyłaczony
@@ -16,24 +18,24 @@ checkFormIsValid(fields, submitButton);
 // ***********************************************************************
 
 // od 20 do 28 loinijki zamnij w oddzielnej funkcji w walidatorze
-//skroc kod 
+//skroc kod
 inputs.forEach((input) => {
   input.addEventListener("blur", () => {
     const field = fields.find((field) => field.id === input.id);
-    console.log(field);
-    if (input.value === "") {
-      displayError(input, "Field cannot be empty");
-      // zmieniam isValid na false - nie jest poprawne
-      field.isValid = false;
-    } else {
-      field.validate(input, field);
+    if (field) {
+      if (input.value === "") {
+        displayError(input, "Field cannot be empty");
+        // zmieniam isValid na false - nie jest poprawne
+        field.isValid = false;
+      } else {
+        field.validate(input, field);
+      }
+      checkFormIsValid(fields, submitButton);
     }
-    checkFormIsValid(fields, submitButton);
   });
 });
 
 // ***********************************************************************
-
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();

@@ -1,2 +1,2 @@
 import "../sass/main.scss";
-import "../js/signUp/signUp.js";
+import "../js/signUp/signUp.ts";

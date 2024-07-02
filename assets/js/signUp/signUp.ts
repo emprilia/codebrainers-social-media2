@@ -1,7 +1,7 @@
 // import !
 import { fields } from "./fields.ts";
-import { displayError } from "./errors.js";
-import { checkFormIsValid } from "../helpers/form.js";
+import { displayError } from "./errors.ts";
+import { checkFormIsValid } from "../helpers/form.ts";
 
 // ***********************************************************************
 
@@ -24,9 +24,7 @@ inputs.forEach((input) => {
     const field = fields.find((field) => field.id === input.id);
     if (field) {
       if (input.value === "") {
-        displayError(input, "Field cannot be empty");
-        // zmieniam isValid na false - nie jest poprawne
-        field.isValid = false;
+        displayError(input, "Field cannot be empty", field);
       } else {
         field.validate(input, field);
       }

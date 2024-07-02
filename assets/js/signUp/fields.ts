@@ -4,11 +4,11 @@ import {
   validatePassword,
   validateUsername,
   validateConfirmPassword,
-} from "./validators.js";
+} from "./validators.ts";
 
 type InputId = "username" | "email" | "password" | "confirmPassword";
 
-interface FieldType {
+export interface FieldType {
   id: InputId;
   isValid: boolean;
   validate: (input: HTMLInputElement, field: FieldType) => void;

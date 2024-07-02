@@ -15,7 +15,6 @@ export const displayError = (
 
 export const removeError = (input: HTMLInputElement, field: FieldType) => {
   const errorParrent = input.parentElement;
-
   if (errorParrent) {
     const error = errorParrent.querySelector(".auth__error");
     if (error) {

@@ -1,3 +1,6 @@
+import "../../sass/main.scss";
+
+
 // import !
 import { fields } from "./fields.ts";
 import { displayError } from "./errors.ts";

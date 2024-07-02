@@ -6,7 +6,16 @@ import {
   validateConfirmPassword,
 } from "./validators.js";
 
-export const fields = [
+type InputId = "username" | "email" | "password" | "confirmPassword";
+
+interface FieldType {
+  id: InputId;
+  isValid: boolean;
+  validate: (input: HTMLInputElement, field: FieldType) => void;
+}
+
+// const fields: Array<FieldType>;
+export const fields: FieldType[] = [
   {
     id: "username",
     isValid: false,

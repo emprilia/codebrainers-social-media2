@@ -5,6 +5,8 @@ import "../../sass/main.scss";
 import { fields } from "./fields.ts";
 import { displayError } from "./errors.ts";
 import { checkFormIsValid } from "../helpers/form.ts";
+import { populateCountrySelect } from "../helpers/countries.ts";
+
 
 // ***********************************************************************
 
@@ -52,3 +54,5 @@ form.addEventListener("submit", (event) => {
 
   window.location.href = "index.html";
 });
+
+populateCountrySelect();
